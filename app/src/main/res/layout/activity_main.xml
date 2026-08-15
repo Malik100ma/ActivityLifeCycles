@@ -8,49 +8,43 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvOnStartCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/tvCreateCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
+        android:layout_marginTop="9dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/tvOnStartCount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvOnStartCount" />
-
-    <TextView
-        android:id="@+id/tvPauseCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="109dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvOnStartCount"
-        app:layout_constraintTop_toTopOf="@+id/tvOnStartCount" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/tvResumeCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="298dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="загальна викликів он креат"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCreateCount" />
 
     <TextView
-        android:id="@+id/tvStopCount"
+        android:id="@+id/totalCreateCount"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tvCreateCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvResumeCount" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="301dp" />
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="240dp"
+        android:text="Кількість он крііт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
